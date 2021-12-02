@@ -1,17 +1,18 @@
 body{
     background-color: yellow;
-    background: #ccc;
+    background-color: #ccc;
     /* retira a margem da página */
     margin: 0;
 }
 
 /* define os parametros do menu existente no header */
+
 .menu{
     margin-top: 2%;
     margin-left: 65%;
     display: inline-block;
-    padding: 0px;
     list-style: none;
+    
     
 }
 
@@ -29,6 +30,9 @@ body{
     text-align: center;
     line-height: 10px;
     height: 10px;
+    /* distancia de um objeto para o outro */
+    margin-left: 10px;
+    
 }
 
 /* define parametro para o menu qdo estiver com o cursor em cima */
@@ -41,7 +45,9 @@ body{
     height: 500px;
     background-position: right center;
     /* permite ajustar o tamanho da imagem de acordo com a página */
-    /* background-size: cover; */
+    background-size: cover; 
+    /* adiciona uma borda na página permitindo ajustar a imagem de acordo com a borda */
+    border-top: 1px solid transparent;
 }
 
 .hero-content{
@@ -59,20 +65,63 @@ body{
 
 }
 
-.content-section{
-    background-color: white;
-    /* espaçamento  */
-    padding: 15px;
-    margin-top: 15px;
+.hero-content p{
+    /* adicionar a cor com transparência */
+    background-color: rgba(0, 0, 0, .8);
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid; 
 }
 
+
+.content-section{
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+    /* define se um obejto deve ser cortado ou não, onde auto ajustar o conteúdo a janela */
+    overflow: auto;
+   
+   
+}
+
+.card{
+    width: 32%;
+    float: left;
+    /* border: 2px solid blue; */
+    /* permite incluir calcular a largura e altura dos elementos, border-box inclui o padding e borda */
+    box-sizing: border-box;
+    
+}
+
+/* aplica parametrização para duas classes ao mesmo tempo */
+.card1, .card2{
+    margin-right: 2%;
+}
+
+.card img{
+    /* define que a imagem irá ocupar 100% do espaço disponível */
+    width: 100%;
+    display: block;
+    
+}
+
+
+.card p{
+    background-color: black;
+    color: white;
+    /* margin tira/adicionar espaço entre os objetos */
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    
+
+}
 footer{
     text-align: center;
     height: 40px;
     /* permite alinhar o texto na posição vertical, mas deve ser no mesmo valor da altura  */
     line-height: 40px;
-    background-color: gray;
-    /* text-align: center; */
-    top: 20px;
+    background-color: white;
+
     
 }
