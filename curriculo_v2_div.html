@@ -7,17 +7,17 @@
 <head>
     <title>Comandos básicos do CSS</title>
     <!-- informa que a página terá alguns tipos de caracteres como acento-->
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
     <meta name="author" content="Fernando Macedo">
     <!-- pode ser utilizado pelo google como resultado da pesquisa-->
-    <meta name="description" content="Estrutura básica das páginas HTML"> 
+    <meta name="description" content="Estrutura básica das páginas HTML">
     <!-- informa o conteúdo do arquivo-->
-    <meta name="keywords" content="html5, css"> 
+    <meta name="keywords" content="html5, css">
 
     <!-- faz referencia ao arquivo de estilos do css -->
     <link rel="stylesheet" href="css\estilo.css">
 
-       
+
 
 </head>
 
@@ -25,68 +25,86 @@
 
     <div id="#principal">
 
-    <header class="hero">
-       
-        <nav>
-            <ul>
-                <li class="menu">
-                    <a href="#">Início</a>
-                    <a href="#">Projetos</a>
-                    <a href="#">Quem somos</a>
-                </li>
-            </ul>
-       </nav>
-            
+        <header class="hero">
+
+            <nav>
+                <ul>
+                    <li class="menu">
+                        <a href="#">Início</a>
+                        <a href="#">Projetos</a>
+                        <a href="#">Quem somos</a>
+                    </li>
+                </ul>
+            </nav>
+
             <div class="hero-content">
                 <h1>Curso Web Fundamentos</h1>
                 <p>Aprenda HMTL, CSS e JavaScript</p>
             </div>
 
-    </header>
+        </header>
 
-    <!-- area principal -->
-    <main>
+        <!-- area principal -->
+        <main>
 
-        <section class="content-section">
+            <section class="content-section">
 
-            <div class="card card1">
-                <img src="images/card_01.png" alt="">
-                <p>Seletores</p>
+                <div class="card card1">
+                    <img src="images/card_01.png" alt="">
+                    <p>Seletores</p>
 
-            </div>
+                </div>
 
-            <div class="card card2">
-                <img src="images/card_02.jpg" alt="">
-                <p>Posicionamentos</p>
+                <div class="card card2">
+                    <img src="images/card_02.jpg" alt="">
+                    <p>Posicionamentos</p>
 
-            </div>
+                </div>
 
-            <div class="card card3">
-                <img src="images/card_03.jpg" alt="">
-                <p>Fontes</p>
+                <div class="card card3">
+                    <img src="images/card_03.jpg" alt="">
+                    <p>Fontes</p>
 
-            </div>
+                </div>
 
-        </section>
+            </section>
 
-        <section>
-            <article>
-                <header><h2>Titulo do article</h2></header>
-                <p>Paragrafo 1</p>
-                <p>Paragrafo 2</p>
-            </article>
+            <section>
 
-        </section>
+                <header>
+                    <h2>Titulo do article</h2>
+                </header>
 
-    </main>
+                <article class="box_article">
 
-    <footer>
+                    <div class="card_article">
+                        <a href="#">
+                            <img src="images/card_04.jpg" alt="">
+                            <p>HTML5</p>
+                        </a>
 
-        Copyright &copy; 2018
-        
-    </footer>
+                    </div>
 
-    
+                    <div class="card_article">
+                        <a href="#">
+                            <img src="images/card_05.jpg" alt="">
+                            <p>CSS</p>
+                        </a>
+                    </div>
+
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            Copyright &copy; 2018
+
+        </footer>
+
+
 </body>
 
 </html>

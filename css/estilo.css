@@ -93,6 +93,49 @@ body{
     
 }
 
+.box_article{
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+    /* define se um obejto deve ser cortado ou não, onde auto ajustar o conteúdo a janela */
+    overflow: auto;
+   
+}
+
+.card_article{
+    width: 50%;
+    padding: 5px 5px 0;
+    float: left;
+    /* border: 2px solid blue; */
+    /* permite incluir calcular a largura e altura dos elementos, border-box inclui o padding e borda */
+    box-sizing: border-box;
+    
+}
+
+.box_article p{
+    /* adicionar a cor com transparência */
+    background-color: rgba(0, 0, 0, .8);
+    text-align: center;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-bottom: 2px solid; 
+}
+
+.box_article img{
+    width: 100%;
+    display: block;
+}
+    .box_article card_article p{
+        background-color: black;
+        color: white;
+        /* margin tira/adicionar espaço entre os objetos */
+        margin: 0;
+        padding: 15px;
+        text-align: center;
+        
+} 
+
 /* aplica parametrização para duas classes ao mesmo tempo */
 .card1, .card2{
     margin-right: 2%;
@@ -106,7 +149,7 @@ body{
 }
 
 
-.card p{
+.card p {
     background-color: black;
     color: white;
     /* margin tira/adicionar espaço entre os objetos */
@@ -121,7 +164,7 @@ footer{
     height: 40px;
     /* permite alinhar o texto na posição vertical, mas deve ser no mesmo valor da altura  */
     line-height: 40px;
-    background-color: white;
+    /* background-color: white; */
 
     
 }
